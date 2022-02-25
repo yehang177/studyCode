@@ -1,0 +1,155 @@
+/* 版心 */
+.wrapper{
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* 快捷导航 */
+.shortcut{
+    height: 52px;
+    background-color: #333;
+}
+
+.shortcut .wrapper{
+    /* background-color: pink; */
+    height: 52px;
+}
+
+.shortcut .wrapper ul{
+    float:right;
+}
+
+.shortcut .wrapper li{
+    float: left;
+    line-height: 52px;
+}
+
+.shortcut .wrapper a{
+    padding: 0 16px;
+    border-right: 1px solid #666;
+    font-size: 14px;
+    color: #dcdcdc;;
+}
+
+.shortcut .wrapper span{
+    /* span是行内模式，是无法有宽高的 */
+    display: inline-block;
+    margin-right: 8px;;
+    width: 11px;
+    height: 16px;
+    background-image:url(../images/sprites.png) ;
+    background-position: -160px -70px ;
+    vertical-align: middle;
+
+}
+
+
+/* 头部 */
+.header{
+    margin: 30px auto;
+    height: 70px;
+}
+
+.logo{
+    float: left;
+    height: 70px;
+    width: 207px;
+}
+
+/* 优化搜索引擎的方法 */
+.logo h1{
+    height: 70px;
+    width: 207px;
+}
+/* height和width不写也可以，继承 */
+
+.logo h1 a{
+    display: block;
+    width: 207px;
+    height: 70px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    font-size: 0px;
+}
+
+.nav{
+    float:left;
+    margin-left: 40px;
+    height: 70px;
+}
+
+.nav li{
+    float: left; 
+    margin-right: 48px;
+    line-height: 70px;
+}
+
+.nav li a{
+    padding-bottom: 7px;
+}
+
+.nav li a:hover{
+    color: green;
+    border-bottom: 1px solid #27ba9b;
+}
+
+.search{
+    float:left;
+    position: relative;
+    margin-left: 34px;
+    margin-top: 24px;
+    width: 172px;
+    height: 30px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.search input{
+    padding-left: 30px;
+    width: 172px;
+    height: 28px;
+}
+
+.search input::placeholder{
+    font-size: 14px;
+    width: 172px;
+    height: 28px;
+}
+
+.search span{
+    display: inline-block;
+    position: absolute;
+    left:2px;
+    top:0;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/sprites.png);
+    background-position: -79px -69px;
+}
+
+.car{
+    position: relative;
+    float: left;
+    margin-left :15px;
+    margin-top: 28px; 
+    width: 23px;
+    height: 23px;
+    background-image: url(../images/sprites.png);
+    background-position: -119px -69px;
+}
+
+.car span{
+    position: absolute;
+    right: -13px;
+    top: -6px;
+    display: inline block;
+    width: 20px;
+    height: 15px;
+    background-color: #e26237;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+
+}
+
+
