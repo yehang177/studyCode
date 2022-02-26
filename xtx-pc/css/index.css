@@ -1,0 +1,183 @@
+/* banner */
+.banner{
+    height: 500px;
+    background-color: #f5f5f5;
+}
+
+.banner .wrapper{
+    position: relative;
+    height: 500px;
+    background-color: pink;
+}
+
+.banner .aside{
+    position: absolute;
+    left:0;
+    top: 0;
+    height: 500px;
+    width: 250px;
+    background-color: rgba(0,0,0,.8);
+}
+
+.banner .aside li{
+    height: 50px;
+    line-height: 50px;
+}
+
+.banner .aside a{
+    position: relative;
+    padding-left: 35px;
+    padding-right: 19px;
+    display: block;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.banner .aside a span{
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+.banner .aside a:hover{
+    background-color: #27ba9b;
+}
+
+.banner .aside a::after{
+    position: absolute;
+    right: 19px;
+    top: 19px;
+    content: '';
+    width: 6px;
+    height: 11px;
+    background-image: url(../images/sprites.png);
+    background-position: -80px -110px;
+}
+
+/* 箭头 */
+.prev,
+.next{
+    position: absolute;
+    top: 228px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0,0,0,.2);
+    background-image: url(../images/sprites.png);
+    border-radius: 50%;
+}
+
+.prev{
+    left: 260px;
+    background-position: 14px -60px;
+}
+
+.next{
+    right: 10px;
+    background-position: -23px -60px;
+}
+
+/* 圆点 */
+.banner ol{
+    position: absolute;
+    left: 600px;
+    bottom: 30px;
+    height: 10px;
+}
+
+.banner ol li{
+    float: left;
+    margin-right: 24px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255,0.43);
+    border-radius: 50%;
+}
+
+.banner ol .current{
+    background-color: #fff;
+}
+
+/* 新鲜好物 */
+/* 头部 */
+.goods .hd{
+    height: 114px;
+    line-height: 114px;
+}
+
+.goods .hd h2{
+    float:left;
+    height: 114px;
+    font-size: 29px;
+    font-style: normal;
+}
+
+.goods .hd h2 span{
+    margin-left: 34px;
+    font-size: 16px;
+    color: #999;
+}
+
+.goods .hd a{
+    float :right;
+    color: #999;
+}
+
+.goods .hd a::after{
+    content: '';
+    display: inline-block;
+    margin-left: 13px;
+    width: 7px;
+    height: 13px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+    vertical-align: middle;
+}
+
+/* 尾部 */
+.goods .bd li{
+    position: relative;
+    float:left;
+    margin-right: 8px;
+    width: 304px;
+    height: 405px;
+    background-color: #f0f9f4;
+    text-align: center;
+}
+
+.goods .bd li:last-child{
+    margin-right: 0;
+}
+
+.goods .bd li img{
+    width: 304px;
+}
+
+.goods .bd li h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.goods .bd li div{
+    color: #9a2e1f;
+    font-size: 19px;
+}
+
+.goods .bd li div span{
+    font-size: 23px;
+}
+
+.goods .bd li b{
+    position: absolute;
+    left: 17px;
+    top: 18px;
+    width: 28px;
+    height: 51px;
+    border: 1px solid #27ba9b;
+    border-radius: 2px;
+    font-size: 18px;
+    color: #27ba9b;
+    font-weight: 400;
+    line-height: 24px;
+}
